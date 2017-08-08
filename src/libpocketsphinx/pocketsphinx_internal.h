@@ -58,6 +58,10 @@
 #include "dict.h"
 #include "dict2pid.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * Search algorithm structure.
  */
@@ -230,5 +234,9 @@ struct ps_decoder_s {
 struct ps_search_iter_s {
     hash_iter_t itor;
 };
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif
 
 #endif /* __POCKETSPHINX_INTERNAL_H__ */

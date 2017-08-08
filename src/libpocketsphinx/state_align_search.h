@@ -50,6 +50,9 @@
 #include "ps_alignment.h"
 #include "hmm.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
  * History structure
@@ -83,5 +86,9 @@ ps_search_t *state_align_search_init(const char *name,
 				     cmd_ln_t *config,
                                      acmod_t *acmod,
                                      ps_alignment_t *al);
+
+#ifdef __cplusplus
+} /* extern "C" */
+#endif
 
 #endif /* __STATE_ALIGN_SEARCH_H__ */
